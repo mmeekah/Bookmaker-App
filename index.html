@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Bookmarker</title>
+  </head>
+  <body>
+    <div class="container">
+      <h3 class="text-muted">Bookmarker</h3>
+      <div class="jumbotron">
+        <h2>Bookmark your favorite sites</h2>
+        <form>
+          <div class="form-group">
+            <label for="siteName">Site Name</label>
+            <input
+              type="text"
+              name="siteName"
+              id="siteName"
+              class="form-control"
+              placeholder="Enter Site Name..."
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="siteUrl">Site URL</label>
+            <input
+              type="text"
+              name="siteUrl"
+              id="siteUrl"
+              class="form-control"
+              placeholder="Enter Site URL..."
+            />
+          </div>
+          <button class="btn btn-success">Submit</button>
+        </form>
+        <div>
+          <br />
+
+          <input
+            type="text"
+            id="filter"
+            name="filter"
+            class="form-control"
+            placeholder="Search Bookmark Name..."
+          />
+        </div>
+      </div>
+      <div id="bookmarks"></div>
+      <footer class="fixed-bottom text-center pb-2">
+        <a>&copy;</a>
+        2019 Bookmarker
+      </footer>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
